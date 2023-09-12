@@ -137,11 +137,11 @@ nav ul li{
     position: relative;
     padding: 80px;
 }
-#about-us img{
-    width: 578px;
+#about-us video{
+    width: 450px;
     position: absolute;
-    top: 187px;
-    transform: translate(-119px);
+    top: 135px;
+    transform: translate(-35px);
   }
    
 #about-us .sequer{
@@ -237,7 +237,7 @@ nav ul li{
     footer .four p span{
         transform: translateX(-20px);
     }
-
+    
     @media screen and (max-width:992px) {
         .navbar .container .nav{
             position: fixed;
