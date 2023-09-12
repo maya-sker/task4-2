@@ -1,0 +1,256 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.4s ease;
+}
+body{
+    line-height: 1.7;
+}
+.head{
+    
+    background-image:linear-gradient(rgba(4, 103, 252, 0.705),#215cba), url(../images/ch.jpg) ;
+    background-position: center !important;
+    background-size: cover !important;
+}
+h1,h2,h3{
+    font-weight: 800px !important; 
+    color: white;
+}
+p{
+    font-weight: 800px !important; 
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4 {
+    font-family: 'Caprasimo', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+img{
+    width: 100%;}
+    
+.button_go{
+        background-color:rgb(46, 74, 235) ;
+        color: white;
+        padding: 5px 14px;
+        border-radius: 40px;
+        font-size: 18px;
+
+       
+}
+.shadow-out
+{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+    
+/* NAVBAR */
+.justify-content-between {
+    justify-content: space-between!important;}
+.top-nav{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
+}
+.top-nav a{
+    display: inline-block;
+    margin-right: 18px;
+} 
+.top-nav a:hover{
+    border-radius:10%;
+    color:rgb(250, 184, 62)!important ;
+}
+nav ul{
+    margin: 0px 160px;
+}
+nav ul li{
+    margin: 0px 10px;
+}
+.navbar .container .nav{
+    position: fixed;
+    top: 50px;
+    z-index: 3;
+} 
+
+.navbar .navbar-nav a:hover
+{
+    color:rgb(250, 184, 62)!important ;
+    border-radius:10%;
+}
+ 
+/* slider */
+.slider span{
+    display: block;
+    
+}
+
+/* category */
+#category .card{
+    background-color: rgba(213, 213, 255, 0.555);
+}
+#category .card .icon{
+    font-size: 30px !important;
+    background-color: white;
+    border-radius: 10px;
+}
+#category .card h3{
+    width: max-content;
+    font-size: 15px;
+}
+
+/* instructor */
+#Instructor{
+    background-color: rgba(189, 218, 247, 0.178);
+    margin:60px ;
+}
+#Instructor img{
+    transform: translateY(-14%);
+}
+
+/* education */
+#education .icon{
+    border: 1px solid rgb(72, 89, 241);
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 30px;
+    
+}
+#education .card-text{
+    margin:0px auto ;
+}
+/* courses */
+#courses{
+    background-color: rgba(189, 218, 247, 0.178);
+    margin:60px ;
+}
+#courses .card{
+    box-shadow: 3px -3px 19px 4px rgb(171, 175, 184);
+}
+/* leader */
+#Leader{
+    background-image: url();
+    background-image:linear-gradient(rgba(4, 103, 252, 0.705),#215cba), url(../images/ch.jpg) ;
+    background-position: center !important;
+    background-size: cover !important;
+}
+/* about us */
+#about-us{
+    position: relative;
+    padding: 80px;
+}
+#about-us img{
+    width: 578px;
+    position: absolute;
+    top: 187px;
+    transform: translate(-119px);
+  }
+   
+#about-us .sequer{
+    width: 495px;
+    height: 438px;
+    background-color: rgba(192, 213, 252, 0.932);
+    position: absolute;
+     top: 90px;}
+    /* right: -2px;
+
+
+/* school-news */
+#school-news .card{
+    display: flex;
+    flex-direction: row !important;
+    box-shadow: 3px -3px 19px 4px rgb(171, 175, 184);
+
+}
+#school-news .card-text{
+    margin: 0px auto;
+}
+#school-news img{
+    width:100%;
+}
+#school-news .date{
+    font-size: 15px;
+    color: rgb(184, 181, 181);
+}
+
+/* pricing */
+#pricing h5{
+    display: inline;
+}
+#pricing .card-text{
+    margin: 0px auto;
+}
+#pricing .btn{
+    color: #215cba;
+}
+
+/* Tistemonials */
+#Tistemonials img{
+    width: 200px;
+}
+#carouselExampleIndicators{
+    background-color: rgba(189, 218, 247, 0.178);
+
+}
+
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 4px;
+    height: 4px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #3804f7;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;}
+
+    /* footer */
+    footer{
+        height: max-content;
+        width: 100%;
+    }
+    footer .icon{
+        margin: 15px 5px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 10px 10px;
+        
+    }
+    footer ul li{
+        list-style: none;
+        padding: 8px;
+    }
+    footer .three img{
+        width: 100px;
+        padding: 10px;
+
+    }
+    footer .four p span{
+        transform: translateX(-20px);
+    }
+
+    @media screen and (max-width:992px) {
+        .navbar .container .nav{
+            position: fixed;
+            top: 0px;
+            background-color: #215cba;
+            z-index: 3;
+            display: flex;
+            justify-content: space-around;
+            gap: 366px;
+        } 
+        .top-nav{
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
+            position: relative;
+            top: 40px;
+        }
+    }
