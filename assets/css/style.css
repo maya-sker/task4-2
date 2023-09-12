@@ -4,9 +4,6 @@
     padding: 0px;
     transition: all 0.4s ease;
 }
-body{
-    line-height: 1.7;
-}
 .head{
     
     background-image:linear-gradient(rgba(4, 103, 252, 0.705),#215cba), url(../images/ch.jpg) ;
@@ -14,7 +11,6 @@ body{
     background-size: cover !important;
 }
 h1,h2,h3{
-    font-weight: 800px !important; 
     color: white;
 }
 p{
@@ -88,12 +84,12 @@ nav ul li{
     background-color: rgba(213, 213, 255, 0.555);
 }
 #category .card .icon{
+    width: max-content;
     font-size: 30px !important;
     background-color: white;
     border-radius: 10px;
 }
 #category .card h3{
-    width: max-content;
     font-size: 15px;
 }
 
@@ -230,7 +226,7 @@ nav ul li{
         padding: 8px;
     }
     footer .three img{
-        width: 100px;
+        width: 85px;
         padding: 10px;
 
     }
@@ -239,6 +235,11 @@ nav ul li{
     }
     
     @media screen and (max-width:992px) {
+                
+        h1,h2,h3{
+            font-weight: 100px !important; 
+            color: white;
+        }
         .navbar .container .nav{
             position: fixed;
             top: 0px;
@@ -246,11 +247,15 @@ nav ul li{
             z-index: 3;
             display: flex;
             justify-content: space-around;
-            gap: 366px;
         } 
         .top-nav{
             border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
             position: relative;
             top: 40px;
         }
+        .part{
+            display: flex;
+            flex-wrap: wrap;}
+       
+
     }
