@@ -28,19 +28,33 @@ img{
     width: 100%;}
     
 .button_go{
-        background-color:rgb(46, 74, 235) ;
+        background-color:rgb(20, 53, 240) ;
         color: white;
         padding: 5px 14px;
         border-radius: 40px;
         font-size: 18px;
 
-       
+}
+   
+.button_go:hover{
+    background-color:rgb(197, 197, 247) !important ;
+    color: rgb(26, 30, 219) !important;
+    transform: translateY(3px);
+
+
 }
 .shadow-out
 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-    
+.card:hover{
+    background-color: rgb(229, 235, 252) !important;
+    color: var(--light-blue-color);
+    transform: translateY(-9px);
+    box-shadow: 0 4px 10px 4px rgba(173, 70, 1, 0.15);
+    border: solid 1px var(--light-blue-color);
+}
+
 /* NAVBAR */
 .justify-content-between {
     justify-content: space-between!important;}
@@ -63,7 +77,7 @@ nav ul li{
 }
 .navbar .container .nav{
     position: fixed;
-    top: 50px;
+    top: 60px;
     z-index: 3;
 } 
 
@@ -72,7 +86,25 @@ nav ul li{
     color:rgb(250, 184, 62)!important ;
     border-radius:10%;
 }
- 
+
+/* class for js  */
+.display {
+    display: none !important;
+    opacity: 0 !important;
+    
+}
+/* class for js   change the background*/
+.navbar-scrool {
+    background-color: #007bff;
+    color: #fff;
+    top: 0 !important;
+    transition: .5s all ease-in !important;
+}
+
+/* class for js  */
+.toop {
+    top: 0;
+}
 /* slider */
 .slider span{
     display: block;
@@ -92,7 +124,7 @@ nav ul li{
 #category .card h3{
     font-size: 15px;
 }
-
+  
 /* instructor */
 #Instructor{
     background-color: rgba(189, 218, 247, 0.178);
@@ -133,11 +165,13 @@ nav ul li{
     position: relative;
     padding: 80px;
 }
-#about-us video{
+#about-us iframe{
     width: 450px;
     position: absolute;
     top: 135px;
     transform: translate(-35px);
+    z-index: 4;
+
   }
    
 #about-us .sequer{
@@ -186,7 +220,10 @@ nav ul li{
     background-color: rgba(189, 218, 247, 0.178);
 
 }
+#carouselExampleIndicators button:hover{
+    background-color:rgb(248, 3, 23) !important ;
 
+}
 
 
 .carousel-indicators [data-bs-target] {
@@ -214,7 +251,7 @@ nav ul li{
         width: 100%;
     }
     footer .icon{
-        margin: 15px 5px;
+        margin: 15px 1px;
         background-color: white;
         border: 1px solid white;
         border-radius: 50%;
@@ -233,20 +270,36 @@ nav ul li{
     footer .four p span{
         transform: translateX(-20px);
     }
+    footer .icon:hover{
+        background-color: rgba(41, 37, 247, 0.336);
+        transform: translateY(-5px);
+
+    }
+    footer .home:hover{
+        color: #3804f7 !important;
+
+    }
     
     @media screen and (max-width:992px) {
-                
+        
         h1,h2,h3{
             font-weight: 100px !important; 
             color: white;
+        }
+        .hidden{
+            display: none !important;
         }
         .navbar .container .nav{
             position: fixed;
             top: 0px;
             background-color: #215cba4d;
-            z-index: 3;
+            z-index: 6;
             display: flex;
-            justify-content: space-around;
+            flex-direction: row;
+            justify-content: space-around !important;
+            align-items: center;
+            gap: 394px;
+
         } 
         .top-nav{
             border-bottom: 0.5px solid rgba(255, 255, 255, 0.555);
